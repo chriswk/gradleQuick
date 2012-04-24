@@ -1,0 +1,5 @@
+apply plugin: 'java'
+allprojects {
+  apply from: "${rootDir}/versions.gradle"
+  apply from: "${rootDir}/dependencies.gradle"
+}

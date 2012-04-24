@@ -11,14 +11,14 @@ project.ext {
         io: "commons-io:commons-io:${versions.commons.io}",
         logging: "commons-logging:commons-logging:${versions.commons.logging}",
         lang: "commons-lang:commons-lang:${versions.commons.lang}"
-      ]
+      ],
       constretto: [
         api: "org.constretto:constretto-api:${versions.constretto}",
         core: "org.constretto:constretto-core:${versions.constretto}"
       ],
       ehcache: [
         springAnnotations: "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:${versions.ehcache.springAnnotations}"
-      ]
+      ],
       finn: [
         commons: [
           cache: "no.finntech:commons-cache:${versions.finn.commons.cache}",
@@ -35,12 +35,12 @@ project.ext {
 
         ],
         kernel: [
-          stableLang: "no.finntech:kernel-stable-lang:${versions.finn.kernel}",
-          legacyDb: "no.finntech:kernel-legacy-db:${versions.finn.kernel}"
+          stableLang: "no.finntech:kernel-stable-lang:${versions.finn.kernel.stable}",
+          legacyDb: "no.finntech:kernel-legacy-db:${versions.finn.kernel.legacydb}"
         ],
         mail: [
-          api: "no.finntech.mail:mail-api:${versions.finn.mail}",
-          webutil: "no.finntech:mail:mail-webutil:${versions.finn.mail}"
+          api: "no.finntech.mail:mail-api:${versions.finn.mail.api}",
+          webutil: "no.finntech:mail:mail-webutil:${versions.finn.mail.webutil}"
         ],
         userClient: "no.finntech.user:user-client:${versions.finn.user}"
       ],
@@ -82,7 +82,7 @@ project.ext {
         beans: "org.springframework:spring-beans:${versions.spring}",
         core: "org.springframework:spring-core:${versions.spring}",
         context: "org.springframework:spring-context:${versions.spring}",
-        context-support: "org.springframework:spring-context-support:${versions.spring}",
+        contextSupport: "org.springframework:spring-context-support:${versions.spring}",
         jdbc: "org.springframework:spring-jdbc:${versions.spring}",
         jpa: "org.springframework:spring-jpa:${versions.spring}",
         test: "org.springframework:spring-test:${versions.spring}",
@@ -95,17 +95,17 @@ project.ext {
         jconn3: "com.sybase:jconn3:${versions.sybase.jconn3}"
       ],
       testing: [
-        easymock: "org.easymock:easymock:${versions.easymock}",
+        easymock: "org.easymock:easymock:${versions.testing.easymock}",
         hamcrest: [
-          all: "org.hamcrest:hamcrest-all:${versions.hamcrest}"
+          all: "org.hamcrest:hamcrest-all:${versions.testing.hamcrest}"
         ],
         jmock: [
-          jmock: "org.jmock:jmock:${versions.jmock}",
-          legacy: "org.jmock:jmock-legacy:${versions.jmock}"
+          jmock: "org.jmock:jmock:${versions.testing.jmock}",
+          legacy: "org.jmock:jmock-legacy:${versions.testing.jmock}"
         ],
-        junit: "junit:junit:${versions.junit}",
+        junit: "junit:junit:${versions.testing.junit}",
         mockito: [
-          all: "org.mockito:mockito-all:${versions.mockito}"
+          all: "org.mockito:mockito-all:${versions.testing.mockito}"
         ]
       ],
       thrift: [
@@ -121,7 +121,7 @@ project.ext {
       ],
       yui : [
         compressor: "com.yahoo.platform.yui:yuicompressor:${versions.yui}"
-      ]
+      ],
       xstream: "com.thoughtworks.xstream:xstream:${versions.xstream}"
     ]
 }
