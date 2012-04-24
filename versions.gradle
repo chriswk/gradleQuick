@@ -55,7 +55,7 @@ project.ext {
     jsonlib: "2.4",
     jta: "1.1",
     logging: [
-      log4j: "1.2.14"
+      log4j: "1.2.14",
       log4jdbc: "1.1-jconn3"
     ],
     memcached: [
@@ -74,12 +74,12 @@ project.ext {
       junit: "4.10",
       mockito: "1.8.5"
     ],
-    thrift: "0.6.1"
+    thrift: "0.6.1",
     tomcat: [
       jdbcPool: "1.0.8.5",
       juli: "6.0.26"
     ],
-    wro4j: "1.4.5"
+    wro4j: "1.4.5",
     yui: ""
   ]
 }
