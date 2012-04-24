@@ -1,10 +1,14 @@
 project.ext {
     libs = [
+      aopalliance: "aopalliance:aopalliance:${versions.aopalliance}",
       cglib: "cglib-nodep:cglib-nodep:${versions.cglib}",
       commons: [
+        beanutils: "commons-beanutils:commons-beanutils:${versions.commons.beanutils}",
         codec: "commons-codec:commons-codec:${versions.commons.codec}",
         collections: "commons-collections:commons-collections:${versions.commons.collections}",
         dbcp: "commons-dbcp:commons-dbcp:${versions.commons.dbcp}",
+        httpclient: "commons-httpclient:commons-httpclient:${versions.commons.httpclient}",
+        io: "commons-io:commons-io:${versions.commons.io}",
         logging: "commons-logging:commons-logging:${versions.commons.logging}",
         lang: "commons-lang:commons-lang:${versions.commons.lang}"
       ]
@@ -12,6 +16,9 @@ project.ext {
         api: "org.constretto:constretto-api:${versions.constretto}",
         core: "org.constretto:constretto-core:${versions.constretto}"
       ],
+      ehcache: [
+        springAnnotations: "com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:${versions.ehcache.springAnnotations}"
+      ]
       finn: [
         commons: [
           cache: "no.finntech:commons-cache:${versions.finn.commons.cache}",
@@ -19,6 +26,7 @@ project.ext {
           crypt: "no.finntech:commons-crypt:${versions.finn.commons.crypt}",
           db: "no.finntech:commons-db:${versions.finn.commons.db}",
           http: "no.finntech:commons-http:${versions.finn.commons.http}",
+          image: "no.finntech:commons-image:${versions.finn.commons.image}",
           lang: "no.finntech:commons-lang:${versions.finn.commons.lang}",
           monitoring: "no.finntech:commons-monitoring:${versions.finn.commons.motoring}",
           pdf: "no.finntech:commons-pdf:${versions.finn.commons.pdf}",
@@ -36,21 +44,45 @@ project.ext {
         ],
         userClient: "no.finntech.user:user-client:${versions.finn.user}"
       ],
+      findbugs: [
+        jsr305: "com.google.code.findbugs:jsr305:${versions.findbugs.jsr305}"
+      ],
+      google: [
+        guava: "com.google.guava:guava:${versions.guava}"
+      ],
+      hibernate: [
+        validator: "org.hibernate:hibernate-validator:${versions.hibernate.validator}"
+      ],
       ical4j: "ical4j:ical4j:${versions.ical4j}",
       javax: [
+        mail: "javax.mail:mail:${versions.javax.mail}",
         servlet: [
-          jsp-api: "javax.servlet.jsp:jsp-api:${versions.jspApi}",
-          api: "javax.servlet:servlet-api:${versions.servletApi}"
-        ]
+          jspApi: "javax.servlet.jsp:jsp-api:${versions.javax.jspApi}",
+          api: "javax.servlet:servlet-api:${versions.javax.servletApi}"
+        ],
+        transaction: "javax.transaction:jta:${versions.jta}"
       ],
+      jawr: "net.jawr:jawr:${versions.jawr}",
       jodatime: "joda-time:joda-time:${versions.jodatime}",
       jsonlib: "net.sf.json-lib:json-lib:${versions.jsonLib}",
+      logging: [
+        log4j: "log4j:log4j:${versions.logging.log4j}",
+        log4jdbc: "net.sf.log4jdbc:log4jdbc:${versions.logging.log4jdbc}"
+      ],
+      memcached: [
+        client: "com.danga.MemCached:MemCachedClient:${versions.memcached.client}"
+      ],
+      objenesis: "org.objenesis:objenesis:${versions.objenesis}",
+      opensymphony: [
+        oscache: "opensymphony:oscache:${versions.oscache}"
+      ],
       spring: [
         aop: "org.springframework:spring-aop:${versions.spring}",
         aspects: "org.springframework:spring-aspects:${versions.spring}",
         beans: "org.springframework:spring-beans:${versions.spring}",
         core: "org.springframework:spring-core:${versions.spring}",
         context: "org.springframework:spring-context:${versions.spring}",
+        context-support: "org.springframework:spring-context-support:${versions.spring}",
         jdbc: "org.springframework:spring-jdbc:${versions.spring}",
         jpa: "org.springframework:spring-jpa:${versions.spring}",
         test: "org.springframework:spring-test:${versions.spring}",
@@ -59,12 +91,16 @@ project.ext {
         webmvc: "org.springframework:spring-webmvc:${versions.spring}"
 
       ],
+      sybase: [
+        jconn3: "com.sybase:jconn3:${versions.sybase.jconn3}"
+      ],
       testing: [
         easymock: "org.easymock:easymock:${versions.easymock}",
         hamcrest: [
           all: "org.hamcrest:hamcrest-all:${versions.hamcrest}"
         ],
         jmock: [
+          jmock: "org.jmock:jmock:${versions.jmock}",
           legacy: "org.jmock:jmock-legacy:${versions.jmock}"
         ],
         junit: "junit:junit:${versions.junit}",
@@ -75,6 +111,17 @@ project.ext {
       thrift: [
         lib: "org.apache.thrift:libthrift:${versions.thrift}"
       ],
+      tomcat: [
+        jdbcPool: "org.apache.tomcat:jdbc-pool:${versions.tomcat.jdbcPool}",
+        juli: "org.apache.tomcat:juli:${versions.tomcat.juli}"
+      ],
+      wro4j: [
+        core: "ro.isdc.wro4j:wro4j-core:${versions.wro4j}",
+        extensions: "ro.isdc.wro4j:wro4j-extensions:${versions.wro4j}"
+      ],
+      yui : [
+        compressor: "com.yahoo.platform.yui:yuicompressor:${versions.yui}"
+      ]
       xstream: "com.thoughtworks.xstream:xstream:${versions.xstream}"
     ]
 }
