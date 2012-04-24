@@ -1,0 +1,24 @@
+project.ext {
+   versions: [
+             jsp-api: "2.1",
+             servletApi: "2.5",
+             quartz: "1.6.0",
+             spring: "3.0.5.RELEASE",
+             struts2: "2.1.8",
+             thrift: "0.6.1",
+             tiles: "3.0.0-SNAPSHOT",
+             ehcacheSpringAnnotations: "1.1.2",
+             newCar: "1.8",
+             constretto: "1.1.3",
+             travelModules: "1.8.2",
+             travelStats: "1.7.2",
+             imagedownloader: "1.4.1",
+             commonsWeb: "1.4.24",
+             broadcast: "1.6",
+             hamcrest: "1.1",
+             easyMock: "3.1-finn_1",
+             jmock: "2.4.0",
+             jmockit: "1.0",
+             mockrunner: "0.4"
+   ]
+}

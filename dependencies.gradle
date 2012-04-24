@@ -1,0 +1,80 @@
+project.ext {
+    libs = [
+      cglib: "cglib-nodep:cglib-nodep:${versions.cglib}",
+      commons: [
+        codec: "commons-codec:commons-codec:${versions.commons.codec}",
+        collections: "commons-collections:commons-collections:${versions.commons.collections}",
+        dbcp: "commons-dbcp:commons-dbcp:${versions.commons.dbcp}",
+        logging: "commons-logging:commons-logging:${versions.commons.logging}",
+        lang: "commons-lang:commons-lang:${versions.commons.lang}"
+      ]
+      constretto: [
+        api: "org.constretto:constretto-api:${versions.constretto}",
+        core: "org.constretto:constretto-core:${versions.constretto}"
+      ],
+      finn: [
+        commons: [
+          cache: "no.finntech:commons-cache:${versions.finn.commons.cache}",
+          constretto: "no.finntech:commons-constretto:${versions.finn.commons.constretto}",
+          crypt: "no.finntech:commons-crypt:${versions.finn.commons.crypt}",
+          db: "no.finntech:commons-db:${versions.finn.commons.db}",
+          http: "no.finntech:commons-http:${versions.finn.commons.http}",
+          lang: "no.finntech:commons-lang:${versions.finn.commons.lang}",
+          monitoring: "no.finntech:commons-monitoring:${versions.finn.commons.motoring}",
+          pdf: "no.finntech:commons-pdf:${versions.finn.commons.pdf}",
+          thriftClient: "no.finntech:commons-thrift-client:${versions.finn.commons.thriftClient}",
+
+
+        ],
+        kernel: [
+          stableLang: "no.finntech:kernel-stable-lang:${versions.finn.kernel}",
+          legacyDb: "no.finntech:kernel-legacy-db:${versions.finn.kernel}"
+        ],
+        mail: [
+          api: "no.finntech.mail:mail-api:${versions.finn.mail}",
+          webutil: "no.finntech:mail:mail-webutil:${versions.finn.mail}"
+        ],
+        userClient: "no.finntech.user:user-client:${versions.finn.user}"
+      ],
+      ical4j: "ical4j:ical4j:${versions.ical4j}",
+      javax: [
+        servlet: [
+          jsp-api: "javax.servlet.jsp:jsp-api:${versions.jspApi}",
+          api: "javax.servlet:servlet-api:${versions.servletApi}"
+        ]
+      ],
+      jodatime: "joda-time:joda-time:${versions.jodatime}",
+      jsonlib: "net.sf.json-lib:json-lib:${versions.jsonLib}",
+      spring: [
+        aop: "org.springframework:spring-aop:${versions.spring}",
+        aspects: "org.springframework:spring-aspects:${versions.spring}",
+        beans: "org.springframework:spring-beans:${versions.spring}",
+        core: "org.springframework:spring-core:${versions.spring}",
+        context: "org.springframework:spring-context:${versions.spring}",
+        jdbc: "org.springframework:spring-jdbc:${versions.spring}",
+        jpa: "org.springframework:spring-jpa:${versions.spring}",
+        test: "org.springframework:spring-test:${versions.spring}",
+        tx: "org.springframework:spring-tx:${versions.spring}",
+        web: "org.springframework:spring-web:${versions.spring}",
+        webmvc: "org.springframework:spring-webmvc:${versions.spring}"
+
+      ],
+      testing: [
+        easymock: "org.easymock:easymock:${versions.easymock}",
+        hamcrest: [
+          all: "org.hamcrest:hamcrest-all:${versions.hamcrest}"
+        ],
+        jmock: [
+          legacy: "org.jmock:jmock-legacy:${versions.jmock}"
+        ],
+        junit: "junit:junit:${versions.junit}",
+        mockito: [
+          all: "org.mockito:mockito-all:${versions.mockito}"
+        ]
+      ],
+      thrift: [
+        lib: "org.apache.thrift:libthrift:${versions.thrift}"
+      ],
+      xstream: "com.thoughtworks.xstream:xstream:${versions.xstream}"
+    ]
+}
